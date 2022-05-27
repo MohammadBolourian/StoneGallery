@@ -1,0 +1,64 @@
+
+.caption-item{
+  //background: $color6;
+  text-align: center;
+margin-bottom: 10px;
+  background-size: cover;
+position: relative;
+  //width: 300px;
+  height: 300px;
+  p{color: $color3;
+    padding-top: 20%;
+    font-size: 20px;
+    background-color: rgba(142, 140, 140, 0.22);
+    width: 100%;
+    height: 100%;
+  }
+  //img{
+  //  margin: auto;
+  //  margin-top: -40px;
+  //  position: absolute;
+  //  width: 50px;
+  //  height: 50px;
+  //  border-radius: 50% ;
+  //
+  //}
+}
+
+.caption-item-madar{
+  background-image: url("../img/the_face.jpg");
+}
+.caption-item-pedar{
+  background-image: url("../img/WallpaperGram.IR_ws1588194963_20089.jpg");
+}
+.caption-item-javan{
+  background-image: url("../img/WallpaperGram.IR_1571878814_65931.jpg");
+}
+.caption-item-goonagoon{
+  background-image: url("../img/مرگ.jpg");
+}
+//.pedar .caption-item{
+//  background-image: url("../img/WallpaperGram.IR_ws1588194963_20089.jpg");
+//}
+//.javan .caption-item{
+//  background-image: url("../img/WallpaperGram.IR_1571878814_65931.jpg");
+//}
+//.gonagon .caption-item{
+//  background-image: url("../img/مرگ.jpg");
+//}
+.caption-header{
+@include background-path2;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-right: 30px;
+  color: white;
+  font-size: 30px;
+}
+.page-item{
+  padding: 2px;
+
+}
+ .page-item .page-link {
+  @include background-path2;
+   color: white;
+}

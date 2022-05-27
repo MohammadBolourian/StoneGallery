@@ -1,0 +1,66 @@
+.fixed-contact {
+  position: fixed;
+  right: 35px
+;
+  bottom: 35px
+;
+  z-index: 1001;
+}
+.fixed-contact-button{
+  background: #000;
+  color: #fff !important;
+  //box-shadow: 0 2px 5px rgb(255 255 255) , 0 5px 15px rgb(255 185 49);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border:0;
+  height: 54px;
+  width: 54px;
+  display: block;
+  border-radius: 100%;
+  line-height: 54px !important;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  text-align: center;
+  -webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out, transform .2s ease-in-out;
+}
+.icon_phone i {
+  font-size: 30px;
+}
+.fixed-contact-tooltip{
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: 15px;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 4px;
+  //box-shadow: 0 3px 20px rgb(25 63 125 / 15%);
+
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border:0; pointer-events: none;
+  color: #555658;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.fixed-contact-tooltip:before{
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: 21px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(
+                  45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(
+                  45deg);
+  border-radius: 0 0 4px 0;
+  background-color: inherit;
+}
+@media (max-width: 1360px){.best_screen_features_area svg {
+  top: 0;
+}}

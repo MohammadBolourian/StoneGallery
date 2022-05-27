@@ -1,0 +1,118 @@
+//start six box
+
+.six-box {
+  margin-top: 50px;
+  direction: rtl;
+
+
+
+  font-size: 14px;
+  text-align: right;
+
+  .text-six-box {
+    padding-right: 15px !important;
+    margin-bottom: 15px !important;
+    direction: rtl;
+    font-size: 20px;
+    color: $color7;
+  }
+
+  .row { align-items: center;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    .box-text-left {
+      margin-bottom: 18px;
+
+      .box-text-left-item {
+        position: relative;
+        @include background-path2;
+        color: $color5;
+        padding: 15px;
+        height: 100%;
+        margin-bottom: 15px;
+        li{
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 20px;
+          padding-bottom: 20px
+        }
+
+        h6 {
+          font-size: 15px;
+        }
+
+        p {
+          font-size: 12px
+        }
+
+
+      }
+    }
+    .Products {
+
+      .six-box-item {
+
+        padding: 0 10px;
+        margin-bottom: 15px;
+
+        .six-box-item-inner { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+          border-radius: 15px 0 15px 0;
+          //height: 260px !important;
+
+
+          .inner-img {
+            width: 100%;
+            height: 100px;
+
+            position: relative;
+            line-height: 0;
+
+            img {border-radius:15px 0 0 0;
+              cursor: zoom-in;
+              @include width;
+            }
+          }
+          .inner-text{
+            height: 90px;
+            overflow: hidden;
+            @include background-path;
+            border-radius: 0 0 15px 0;
+            padding: 5px 2px;
+            color:$color7;
+            .h6 {
+              font-size:12px!important;
+            }
+
+          }
+
+        }
+
+      }
+    }
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .box-text-left {
+    margin-bottom: 30px;
+  }
+
+}
+@media screen and (min-width: 768px), screen and (max-width: 1200px) {
+  .box-text-left {
+    padding-right: 5px;
+    padding-left: 40px;
+  }
+
+}
+
+
+//end six box

@@ -1,0 +1,154 @@
+.header{
+  //padding-left: 0!important;
+  //padding-right: 0;
+
+  background-image: -moz-linear-gradient( 40deg, #ea698b 0%, #6247aa 100%);
+  background-image: -webkit-linear-gradient( 40deg, #ea698b 0%, #6247aa 100%);
+  background-image: -ms-linear-gradient( 40deg, #ea698b 0%, #6247aa 100%);
+}
+
+
+//end header
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+
+  z-index: 300;
+
+  .menu {
+    @include width;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+
+  }
+
+  .menu-line {
+    width: 100%;
+    height: 4px;
+    background-color: $color2;
+    -webkit-transition: all 0.5s 0.5s;
+    transition: all 0.5s 0.5s;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    //&:focus &:active{
+    //  outline: none;
+    //}
+  }
+
+}
+.checkbox:checked ~ .hamburger-menu .menu {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  -webkit-transform: rotateZ(-40deg);
+  transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  -webkit-transform: rotateZ(40deg);
+  transform: rotateZ(40deg);
+}
+.navbar {
+position: relative;
+  //box-shadow:  0 0 10px 0 gray ;
+  font-size: 18px;
+
+  //background: $coler1;
+  direction: rtl;
+
+
+  &-brand {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+
+    span {
+
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 2rem;
+
+    }
+  }
+
+    .navbar-nav {
+      .nav-item {
+        margin-left: 20px;
+        font-size: 30px;
+        .nav-link {
+          color: $color7;
+        }
+      }
+    }
+
+
+
+
+  .navbar-i {
+
+    .btn{
+      height: 40px;
+      border-radius: 6px;
+      overflow: hidden;
+      span{ font-size: 1.25rem;
+        transition: all .4s linear;
+      }
+      //  &:hover{
+      //transform: scale(1.2,1.2);
+      //  }
+      &:hover span{
+        transform: translateY(-40px);
+      }
+      span{
+        height: 40px;
+      }
+    }
+
+
+  }
+
+
+  .navbar-toggler:active {
+    outline: none!important;
+    border: none;
+
+  }
+  .navbar-toggler:focus {
+    outline: none!important;
+    border: none;
+
+  }
+
+  button.navbar-toggler:focus {
+    outline: none!important;
+    border: none!important;
+
+  }
+
+}
+.navbar-collapse .nav-link{
+  font-size: 1.5rem!important;
+}
+.dropdown-menu{
+  text-align: right;
+  z-index: 2000;
+  @include background-path
+}

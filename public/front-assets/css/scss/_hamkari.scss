@@ -1,0 +1,24 @@
+.takhfif{
+  font-size: 1.3rem;
+  span strong{font-size: 1.5rem;
+    color:#800080;
+  }
+ .kode-takhfif{
+   @include background-path2;
+   color: white;
+   padding: 5px;
+   letter-spacing: 3px;
+   border-radius: 0 7px 0 7px;
+
+ }
+}
+.bazaryabi{
+  font-size: 1.3rem;
+}
+.link-takhfif-li div a{
+  display: inline-block;
+  border-radius: 0 10px 0 10px;
+  padding: 10px;
+  margin-top: 10px;
+  @include background-path2
+}

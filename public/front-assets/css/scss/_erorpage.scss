@@ -1,0 +1,74 @@
+.contentEror{ display: flex;
+  margin-top: 15%;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 350px;
+  }
+  .btn
+  {
+    border-radius:20px;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid $color6;
+    transition: all 0.3s ease-in;
+    &:hover{
+      background-color: $color6;
+      transform: scale(1.05);
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+.objects{
+  .object_rocket{
+    z-index: 103;
+    width:100px;
+
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    animation: rocket 200s linear infinite both running;
+  }
+  .object_earth{
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: spin-earth 100s infinite linear both;
+    z-index: 102;
+  }
+  .object_moon{
+    width: 100px;
+    position: absolute;
+    top: 12%;
+    right: 25%;
+    z-index: 101;
+
+  }
+  .object_astronaut{
+
+    animation: rotate-astronaut 200s infinite linear both alternate;
+  }
+  .box_astronaut{
+    width: 170px;
+    z-index: 100;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    animation: move-astronaut 50s infinite linear both alternate;
+  }
+}
+.star{
+  background: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  animation: op 1s linear;
+  animation-fill-mode: forwards;
+  opacity: 0.7;
+}
+.star-box{
+  width: 100%;
+  height: 100%;
+}

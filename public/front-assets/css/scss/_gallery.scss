@@ -1,0 +1,109 @@
+.box-modal{
+  .modal-img{
+    background-image:url("/img/aksSang (3).jpg") ;
+  }
+}
+
+
+
+//.container {
+//  width: 95%;
+//  margin: 0 auto;
+//}
+
+.grid {
+  display: flex;
+  h1 {
+    margin: 2em 0;
+  }
+
+  img {
+    width: 100%;
+  }
+  .grid-col {
+    flex: 1;
+    padding: 0 .1em;
+  }
+
+  .grid-col--2, .grid-col--3 {
+    display: none;
+  }
+  .grid-item{
+    position: relative;
+  }
+  .grid-caption {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    //margin-top: 1em;
+    width: 100%;
+
+    text-align: center;
+    background: linear-gradient(to top, #525252, transparent);
+    text-shadow: 1px 1px 3px #000;
+
+  }
+  @media (min-width: 768px) {
+    //.container {
+    //  width: 90%;
+    //}
+    h1 {
+      margin: 3em 0;
+    }
+    .grid-col--2 { display: block; }
+    .grid-col {
+      padding: 0 .5em;
+    }
+    img {
+      margin-bottom: .8em;
+    }
+    .grid-caption {
+      opacity: 0;
+      margin-bottom: .8em;
+      transform: translateX(-.5em);
+      transition: all 2s;
+      will-change: opacity, transform;
+    }
+
+    .grid-item:hover {
+      cursor: pointer;
+
+      .grid-caption {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .grid-col--3 { display: block; }
+    .container {
+      width: 80%;
+    }
+    h1 {
+      margin: 5em 0;
+    }
+  }
+}
+
+
+
+
+
+
+.page-item{
+  padding: 2px;
+
+}
+.page-item .page-link {
+  @include background-path2;
+  color: white;
+}
+
+
+
+
+
+
+
+

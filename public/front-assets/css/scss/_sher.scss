@@ -1,0 +1,75 @@
+//start sher v ver
+.sher{ margin-top: 100px;
+  .sher-caption{text-align: center;
+    padding: 5px;
+    padding-top: 30px;
+    font-size: 19px;
+    color: white;
+
+    @include background-path2;
+    border-radius: 10px;
+    //height: 300px;
+  }
+  .sher-item{
+
+    //background-image: url("../img/HI.png");
+
+    .row{
+      @include width;
+      height: 300px;
+
+      img{@include width;
+        height: 200px;
+        border-radius: 10px;
+      }
+      .sher-item1{position: relative;
+        width: 100%;
+        //height: 350px;
+        //background-image: url("../img/مادر2.jpg");
+        //background-size: 100% 100%;
+
+
+        .sher-item-text{ background:linear-gradient(to top,#000 , rgba(255, 255, 255, 0.04))!important;
+
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          z-index: 1000;
+          bottom: 0;
+          right: 0;
+
+          h4 {
+            color: #fff;
+            //z-index: 1000;
+            //display: inline-block;
+
+          }
+        }
+      }
+      .btn-more{   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        //width: 50px;
+        //height: 50px;
+        //margin-top: 10px;
+
+        border-radius: 0 0 10px 10px;
+        @include background-path;
+      }
+    }
+
+  }
+
+}
+@media (max-width: 768px) {
+  .sher{
+    margin-bottom: 180px;
+  }
+  .sher-caption{
+    //height: 200px;
+    margin-bottom: 20px;
+  }
+  .btn-more{
+margin-bottom: 20px;
+  }
+  
+}
+//end sher v ver
